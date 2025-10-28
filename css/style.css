@@ -1,0 +1,151 @@
+/* -------------------------------
+   Global Styles
+--------------------------------*/
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #1c3457;
+  line-height: 1.6;
+  background-color: #f8f9fa; /* Light background */
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+  color: #1c3457;
+}
+.header-section {
+    background-color: #FFFDD0; /* Cream color */
+    padding: 20px; /* Optional: adds space around content */
+}
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* -------------------------------
+   Navbar Styles
+--------------------------------*/
+.custom-blue {
+  background-color: #ffffff !important; /* White navbar */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+}
+
+.navbar .nav-link {
+  color: #1c3457 !important;
+  font-weight: 500;
+  margin-left: 15px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Underline animation */
+.navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background-color: #3EB489; /* Mint green */
+  transition: width 0.3s ease;
+}
+
+/* Hover effect */
+.navbar .nav-link:hover {
+  color: #3EB489 !important;
+  font-weight: 700;
+}
+.navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Active page */
+.navbar .nav-link.active {
+  color: #3EB489 !important;
+  font-weight: 700;
+}
+.navbar .nav-link.active::after {
+  width: 100%;
+}
+
+/* -------------------------------
+   Hero / Section Styling
+--------------------------------*/
+section {
+  padding: 60px 0;
+}
+
+section.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+/* -------------------------------
+   Footer Styles
+--------------------------------*/
+footer {
+  background-color: #1c3457; /* Brand blue footer */
+  color: #ffffff;
+}
+
+footer h5 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+footer a {
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+footer a:hover {
+  color: #3EB489; /* Mint green hover */
+  font-weight: 600;
+}
+
+/* -------------------------------
+   Contact Page Styling
+--------------------------------*/
+.contact-info {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.contact-form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #1c3457;
+  border: none;
+  color: #fff;
+  transition: background 0.3s ease;
+}
+.contact-form button:hover {
+  background-color: #3EB489;
+}
+
+/* -------------------------------
+   Gallery Page Styling
+--------------------------------*/
+.gallery img {
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
